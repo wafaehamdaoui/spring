@@ -30,7 +30,6 @@ public class JwtFilter extends OncePerRequestFilter {
         String username = null;
         boolean isTokenExpired = true;
 
-        // Bearer eyJhbGciOiJIUzM4NCJ9.eyJlbWFpbCI6ImFuYXMuZmFudGFzeXBsMjAwMUBnbWFpbC5jb20iLCJub20iOiJBbmFzIExtb3VjaG91bSJ9
         final String authorization = request.getHeader("Authorization");
         if(authorization != null && authorization.startsWith("Bearer ")) {
             token = authorization.substring(7);
