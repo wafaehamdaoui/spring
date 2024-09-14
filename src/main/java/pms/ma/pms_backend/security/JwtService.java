@@ -20,7 +20,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private final String ENCRYPTION_KEY = "3b98319edcea90e5741c5695147e2180f25a2652add8dfab32c665fd4e26788b";
+    private final String ENCRYPTION_KEY = "";
     private UserService userService;
 
     public Map<String, String> generate(String username) {
